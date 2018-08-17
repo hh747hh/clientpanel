@@ -13,6 +13,7 @@ class AddClient extends Component {
     phone: "",
     balance: ""
   };
+
   onSubmit = e => {
     e.preventDefault();
     const newClient = this.state;
@@ -29,6 +30,7 @@ class AddClient extends Component {
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
+
   render() {
     return (
       <div>
@@ -117,4 +119,5 @@ class AddClient extends Component {
 AddClient.propTypes = {
   firestore: PropTypes.object.isRequired
 };
+
 export default firestoreConnect()(AddClient);
