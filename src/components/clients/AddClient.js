@@ -107,7 +107,6 @@ class AddClient extends Component {
                 value="Add"
                 className="btn btn-primary btn-block"
               />
-              >
             </form>
           </div>
         </div>

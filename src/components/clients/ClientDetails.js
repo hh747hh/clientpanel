@@ -6,7 +6,6 @@ import { firestoreConnect } from "react-redux-firebase";
 import PropTypes from "prop-types";
 import Spinner from "../layout/Spinner";
 import classnames from "classnames";
-import { parse } from "path";
 
 class ClientDetails extends Component {
   state = {
@@ -84,7 +83,7 @@ class ClientDetails extends Component {
             <div className="col-md-6">
               <div className="btn-group float-right">
                 <Link
-                  to={`/cient/edit/${client.id}`}
+                  to={`/client/edit/${client.id}`}
                   className="btn btn-dark mr-3"
                 >
                   Edit
